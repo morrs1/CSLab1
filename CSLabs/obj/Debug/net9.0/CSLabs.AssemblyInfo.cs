@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CSLabs")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f8263095b375f5e10d4f0212d532fb337d2222a3")]
 [assembly: System.Reflection.AssemblyProductAttribute("CSLabs")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CSLabs")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

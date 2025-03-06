@@ -95,3 +95,4 @@ C:\Users\grish\RiderProjects\CSLabs\CSLabs\obj\Debug\net9.0\refint\CSLabs.dll
 C:\Users\grish\RiderProjects\CSLabs\CSLabs\obj\Debug\net9.0\CSLabs.pdb
 C:\Users\grish\RiderProjects\CSLabs\CSLabs\obj\Debug\net9.0\CSLabs.genruntimeconfig.cache
 C:\Users\grish\RiderProjects\CSLabs\CSLabs\obj\Debug\net9.0\ref\CSLabs.dll
+C:\Users\grish\RiderProjects\CSLabs\CSLabs\obj\Debug\net9.0\CSLabs.sourcelink.json
