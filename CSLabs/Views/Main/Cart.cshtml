@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Cart Page";
+}
+@model List<CartItem>
+
+<div class="text-center">
+    <h1 class="display-4">Корзина</h1>
+    @if (Model.Count == 0)
+    {
+        <p>Корзина пуста</p>
+    }
+    else
+    {
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Товар</th>
+                <th>Количество</th>
+                <th>Цена за штуку</th>
+                <th>Общая стоимость</th>
+                <th>Действия</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.ProductName</td>
+                    <td>@item.Quantity</td>
+                    <td>@item.Price.ToString("N2") руб.</td>
+                    <td>@item.Total.ToString("N2") руб.</td>
+                    <td>
+                        <div class="btn-group" role="group">
+                            <form asp-action="DecreaseQuantity" method="post">
+                                <input type="hidden" name="productName" value="@item.ProductName"/>
+                                <button type="submit" class="btn btn-outline-danger">-</button>
+                            </form>
+                            <form asp-action="IncreaseQuantity" method="post">
+                                <input type="hidden" name="productName" value="@item.ProductName"/>
+                                <button type="submit" class="btn btn-outline-success">+</button>
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+        <p class="fw-bold">
+            Общая стоимость заказа: @Model.Sum(item => item.Total).ToString("N2") руб.
+        </p>
+    }
+</div>
